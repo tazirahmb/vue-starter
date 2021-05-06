@@ -1,0 +1,36 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "@babel/preset-env"
+      ],
+      "plugins": [
+        "@babel/plugin-syntax-dynamic-import"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "ie": 9
+            },
+            "forceAllTransforms": true
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-syntax-dynamic-import"
+      ]
+    },
+    "test": {
+      "presets": [
+        "@babel/preset-env"
+      ],
+      "plugins": [
+        "@babel/plugin-syntax-dynamic-import"
+      ]
+    }
+  }
+}
