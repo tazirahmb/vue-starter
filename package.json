@@ -1,10 +1,11 @@
 {
   "name": "webpack-babel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "node tools/srcServer.js"
+    "serve": "node tools/srcServer.js",
+    "version": "auto-changelog -p && git add changelog.md"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
@@ -12,6 +13,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.13.12",
+    "auto-changelog": "^2.2.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "chalk": "^4.1.0",
